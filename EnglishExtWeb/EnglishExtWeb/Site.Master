@@ -1,23 +1,27 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="EnglishExtWeb.SiteMaster" %>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<!DOCTYPE html">
+<html>
 <head runat="server">
-    <title></title>
-    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <meta name="description" content="English exercises. Learning grammar and vocabulary online" />
+    <meta name="keywords" content="English,grammar,vocabulary,exercise" />
+    <meta name="author" content="Victor Zhurabel" />
+    <meta charset="UTF-8" />
+
+    <!-- The below script Makes IE understand the new html5 tags are there and applies our CSS to it -->
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>English exercises</title>
+    <link href="~/Styles/Site.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="HeadContent" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <form runat="server">
-    <div class="page">
-        <div class="header">
-            <div class="title">
-                <h1>
-                    My ASP.NET Application
-                </h1>
-            </div>
-            <div class="loginDisplay">
+    <form runat="server" class=mainForm>
+        <header>
+            <section class=loginDisplay>
                 <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
                     <AnonymousTemplate>
                         [ <a href="~/Account/Login.aspx" ID="HeadLoginStatus" runat="server">Log In</a> ]
@@ -27,25 +31,29 @@
                         [ <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Log Out" LogoutPageUrl="~/"/> ]
                     </LoggedInTemplate>
                 </asp:LoginView>
-            </div>
-            <div class="clear hideSkiplink">
+            </section>
+            <hgroup>
+                <h1>English exercises</h1>
+                <h2>Learning grammar and vocabulary online</h2>
+            </hgroup>
+            <nav class="clear hideSkiplink">
                 <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
                     <Items>
                         <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home"/>
                         <asp:MenuItem NavigateUrl="~/About.aspx" Text="About"/>
                     </Items>
                 </asp:Menu>
-            </div>
-        </div>
-        <div class="main">
+            </nav>
+            <a href="#" title="EnglishEx homepage"><img src="/Images/English.png" alt="EnglishEx. Logo." /></a>
+        </header>
+        <div class="clear" />
+        <article class="main">
             <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
-        </div>
-        <div class="clear">
-        </div>
-    </div>
-    <div class="footer">
-        
-    </div>
+        </article>
+        <div class="clear" />
+    <footer>
+        Hello!
+    </footer>
     </form>
 </body>
 </html>

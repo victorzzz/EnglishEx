@@ -1,14 +1,66 @@
 ﻿/* DEFAULTS
 ----------------------------------------------------------*/
 
-body   
+body
 {
-    background: #b6b7bc;
-    font-size: .80em;
-    font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+    background: #fbfdf6;
+	font-family:"Myriad Pro", Myriad, Helvetica, Arial, sans-serif;
+	font-size:90%;
     margin: 0px;
     padding: 0px;
-    color: #696969;
+    color: #522B27;
+    width: 960px;
+    background-color: #fff;
+    margin: 20px auto 0px auto;
+	line-height:1.4em;    
+}
+
+header, section, article, footer
+{
+    padding: 10px 20px 20px;
+    margin: 10px;
+    border-radius: 8px;
+    border: 1px solid #e7e2d7;
+    -webkit-border-radius: .8em;
+    -moz-border-radius: .8em;
+    background: #fff url(../Images/sprites.png) repeat-x 0px -120px;
+}
+
+header
+{
+    text-align: center;
+    display: block;
+    position: relative;
+    padding: 10px 20px 0px 20px;
+}
+
+header a img 
+{
+	position:absolute;
+	left:20px;
+	top:18px;
+    border: 1px solid #F6F5F1;
+    border-radius: 8px;
+    -webkit-border-radius: .8em;
+    -moz-border-radius: .8em;
+    
+}
+
+
+header section.loginDisplay
+{
+    border: 1px solid #F6F5F1;
+    border-radius: 8px;
+    -webkit-border-radius: .8em;
+    -moz-border-radius: .8em;
+    font-size: 1.1em;
+    display: block;
+    text-align: right;
+    position: absolute;
+    right: 20px;
+    top: 18px;
+    padding: 10px;
+    background-color: transparent;
 }
 
 a:link, a:visited
@@ -34,156 +86,128 @@ p
 }
 
 
+.mainForm
+{
+    width:100%;    
+}
+
+
+
 /* HEADINGS   
 ----------------------------------------------------------*/
 
-h1, h2, h3, h4, h5, h6
+h1, h2, h3, h4, h5, h6 
 {
-    font-size: 1.5em;
-    color: #666666;
-    font-variant: small-caps;
-    text-transform: none;
-    font-weight: 200;
-    margin-bottom: 0px;
+	font-family:Helvetica, Arial, sans-serif;
+	font-size:1.5em;
+	letter-spacing:-0.06em;
+	text-transform:uppercase;
+	font-weight:normal;
 }
 
-h1
-{
-    font-size: 1.6em;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
+header h1 {
+	font-size:2.3em;
+	text-transform:none;
+	letter-spacing:0em;
+	text-align:center;
 }
 
-h2
-{
-    font-size: 1.5em;
-    font-weight: 600;
+header h2 {
+	margin:-10px 0px 20px;
+	font-size:1.3em;
+	text-align:center;
 }
 
-h3
-{
-    font-size: 1.2em;
+article h1 {
+	background:transparent url(../Images/sprites.png) no-repeat 0px 0px;
+	color:#fff;
+	padding:7px 10px 12px 30px;
+	margin-left:-30px;
+	text-shadow:0 1px 0 #403232;
 }
 
-h4
-{
-    font-size: 1.1em;
-}
-
-h5, h6
-{
-    font-size: 1em;
-}
-
-/* this rule styles <h1> and <h2> tags that are the 
-first child of the left and right table columns */
-.rightColumn > h1, .rightColumn > h2, .leftColumn > h1, .leftColumn > h2
-{
-    margin-top: 0px;
-}
-
-
-/* PRIMARY LAYOUT ELEMENTS   
-----------------------------------------------------------*/
-
-.page
-{
-    width: 960px;
-    background-color: #fff;
-    margin: 20px auto 0px auto;
-    border: 1px solid #496077;
-}
-
-.header
-{
-    position: relative;
-    margin: 0px;
-    padding: 0px;
-    background: #4b6c9e;
-    width: 100%;
-}
-
-.header h1
-{
-    font-weight: 700;
-    margin: 0px;
-    padding: 0px 0px 0px 20px;
-    color: #f9f9f9;
-    border: none;
-    line-height: 2em;
-    font-size: 2em;
-}
-
-.main
-{
-    padding: 0px 12px;
-    margin: 12px 8px 8px 8px;
-    min-height: 420px;
-}
-
-.leftCol
-{
-    padding: 6px 0px;
-    margin: 12px 8px 8px 8px;
-    width: 200px;
-    min-height: 200px;
-}
-
-.footer
-{
-    color: #4e5766;
-    padding: 8px 0px 0px 0px;
-    margin: 0px auto;
-    text-align: center;
-    line-height: normal;
+article h2, article h3, article h4, article h5, article h6  {
+	background:transparent url(../Images/sprites.png) no-repeat 0px -40px;
+	color:#fff;
+	padding:7px 10px 12px 30px;
+	margin-left:-30px;
+	text-shadow:0 1px 0 #913951;
 }
 
 
 /* TAB MENU   
 ----------------------------------------------------------*/
 
-div.hideSkiplink
+nav {
+	text-align:center;
+	display:block;
+	width:100%
+}
+
+nav ul {
+	padding:0px;
+	list-style-type:none;
+	display:inline;
+	width:100%;
+}
+
+nav ul li
 {
-    background-color:#3a4f63;
-    width:100%;
+    margin: 0px 6px 0px 0px;
+    padding: 0px;
+    list-style-type: none;
+    display: inline;
+}
+
+nav a:link, nav a:visited {
+	font-size:1.4em;
+	font-weight:normal;
+}
+
+nav.hideSkiplink
+{
+    background-color: #FEFCFD;
+    width: 100%;
+    text-align: center;
+    width: 100%;
+    text-align:center;
+	display:block;
 }
 
 div.menu
 {
-    padding: 4px 0px 4px 8px;
+    margin: 10px 0px 0px 0px;
+    padding: 0px;
+    text-align: center;
+    width: 100%;
 }
 
-div.menu ul
-{
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
-    width: auto;
-}
 
 div.menu ul li a, div.menu ul li a:visited
 {
-    background-color: #465c71;
-    border: 1px #4e667d solid;
-    color: #dde4ec;
+    background-color: transparent;
+    border: 1px solid #F4F3EE;
+    color: #B76944;
     display: block;
     line-height: 1.35em;
-    padding: 4px 20px;
+    padding: 4px 10px 4px 0px;
     text-decoration: none;
     white-space: nowrap;
+    font-weight: bold;
+    font-family: 'Times New Roman' , Times, serif;
 }
 
 div.menu ul li a:hover
 {
-    background-color: #bfcbd6;
-    color: #465c71;
+    background-color: #FBEAD1;
+    color: #A83706;
     text-decoration: none;
 }
 
 div.menu ul li a:active
 {
-    background-color: #465c71;
-    color: #cfdbe6;
+    background-color: #D1E10B;
+    color: #711106;
     text-decoration: none;
 }
 
@@ -244,47 +268,31 @@ div.accountInfo
     clear: both;
 }
 
-.title
-{
-    display: block;
-    float: left;
-    text-align: left;
-    width: auto;
-}
-
-.loginDisplay
-{
-    font-size: 1.1em;
-    display: block;
-    text-align: right;
-    padding: 10px;
-    color: White;
-}
-
 .loginDisplay a:link
 {
-    color: white;
+    background-color: transparent;
+    color: #B76944;
+    text-decoration: none;
 }
 
 .loginDisplay a:visited
 {
-    color: white;
+    background-color: transparent;
+    color: #B76944;
+    text-decoration: none;
 }
 
 .loginDisplay a:hover
 {
-    color: white;
+    background-color: transparent;
+    color: #B76944;
+    text-decoration: none;    
 }
 
 .failureNotification
 {
     font-size: 1.2em;
     color: Red;
-}
-
-.bold
-{
-    font-weight: bold;
 }
 
 .submitButton

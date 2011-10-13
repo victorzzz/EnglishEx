@@ -12,9 +12,9 @@
         <WizardSteps>
             <asp:CreateUserWizardStep ID="RegisterUserWizardStep" runat="server">
                 <ContentTemplate>
-                    <h2>
+                    <h1>
                         Create a New Account
-                    </h2>
+                    </h1>
                     <p>
                         Use the form below to create a new account.
                     </p>
