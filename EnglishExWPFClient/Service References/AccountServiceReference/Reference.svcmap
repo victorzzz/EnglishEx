@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e3b0e72e-a3ed-4954-9a38-2049c2e9a035" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:13804/WCFService/Account/EnglishExAccount.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="EnglishExAccount.xsd" MetadataType="Schema" ID="d62acfc9-fc17-444d-9d55-4261c59372d6" SourceId="1" SourceUrl="http://localhost:13804/WCFService/Account/EnglishExAccount.svc?xsd=xsd0" />
+    <MetadataFile FileName="EnglishExAccount.disco" MetadataType="Disco" ID="3e5ff6f1-1eeb-40f6-b187-a39a39b67d83" SourceId="1" SourceUrl="http://localhost:13804/WCFService/Account/EnglishExAccount.svc?disco" />
+    <MetadataFile FileName="EnglishExAccount.wsdl" MetadataType="Wsdl" ID="dc99ce9e-c610-4520-a0a1-fb65e9d2ac21" SourceId="1" SourceUrl="http://localhost:13804/WCFService/Account/EnglishExAccount.svc?wsdl" />
+    <MetadataFile FileName="EnglishExAccount1.xsd" MetadataType="Schema" ID="12e03410-a9b2-4043-8e22-cc455f60a7bf" SourceId="1" SourceUrl="http://localhost:13804/WCFService/Account/EnglishExAccount.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -40,6 +40,8 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
@@ -58,6 +60,10 @@
     <Content Include="Account\ChangePasswordSuccess.aspx" />
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
+    <Content Include="App_Data\ASPNETDB.MDF" />
+    <Content Include="App_Data\aspnetdb_log.ldf">
+      <DependentUpon>ASPNETDB.MDF</DependentUpon>
+    </Content>
     <Content Include="Images\English.png" />
     <Content Include="Images\sprites.png" />
     <Content Include="Styles\Site.css" />
@@ -66,7 +72,11 @@
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.4.1.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="WCFService\Account\EnglishExAccount.svc" />
+    <Content Include="WCFService\Lesson\EnglishExLesson.svc" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -128,10 +138,16 @@
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
+    <Compile Include="WCFService\Account\EnglishExAccount.svc.cs">
+      <DependentUpon>EnglishExAccount.svc</DependentUpon>
+    </Compile>
+    <Compile Include="WCFService\Account\IEnglishExAccount.cs" />
+    <Compile Include="WCFService\Lesson\EnglishExLesson.svc.cs">
+      <DependentUpon>EnglishExLesson.svc</DependentUpon>
+    </Compile>
+    <Compile Include="WCFService\Lesson\IEnglishExLesson.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Account\Web.config" />
     <Content Include="Site.Master" />

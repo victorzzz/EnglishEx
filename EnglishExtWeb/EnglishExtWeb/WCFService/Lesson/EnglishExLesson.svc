@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="EnglishExtWeb.WCFService.Lesson.EnglishExLesson" CodeBehind="EnglishExLesson.svc.cs" %>
